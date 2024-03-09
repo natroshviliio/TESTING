@@ -6,7 +6,7 @@ const app = express();
 app.use(cors);
 
 app.get('/', (req, res) => {
-    console.log(1);
+    console.log(req.socket.remoteAddress);
 
     res.send("HI");
 });
